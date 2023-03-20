@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/background.css" />
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  </head>
+  <body>
+    <!--
+    또한 리액트는 기본적으로 react.createelement("html tag",props,value)랑 reactDom.render(whole html tag, parent-tag)를 가지고 사용하지만, 바벨이라는
+    도구를 이용해서 JSX라는 쉬운 방법을 사용하게 됨.
+    
+    또한, 리액트는 이 파일의 바닐라 자바스크립트랑 다르게 div-child 를 전체적인 whole tag들을 렌더링 하는게 아니라, 리액트의 함수의 데이터의 스테이트들만 리렌더링 시켜
+    그렇다보니 속도가 엄청 빨라 그래서 나온게 setState지. 만약 setState없다면, 이벤트함수가 실행할때마다 리렌더링을 해줘야함 setState가있다면, 리렌더링을 할필요가 없어짐.
+-->
+    <a id="txt">0</a>
+    <button id="plusbtn">+</button>
+    <button id="minusbtn">-</button>
+    <script src="/JS/button.js"></script>
+  </body>
+</html>
